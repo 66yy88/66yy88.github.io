@@ -1,0 +1,15 @@
+# local dev / temp
+dsh-desktop-setup.exe
+_backup/
+.edge-cdp/
+.edge-*
+.gh-auth*
+_tools/
+_shots/
+*.lnk
+Thumbs.db
+.DS_Store
+node_modules/
+
+# 本地视频不进入仓库，线上版流式引用官方源（见 credits.html）
+assets/videos/

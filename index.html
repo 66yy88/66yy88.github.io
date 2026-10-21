@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#07110e" />
+<meta name="description" content="遗珍 · 非物质文化遗产数字档案馆概念站。以数字建档、沉浸展陈、时空地图与知识图谱，保存并续接民间文学、传统音乐、传统技艺等十大门类。" />
+<meta name="keywords" content="非物质文化遗产,非遗,数字档案馆,传统文化,昆曲,缂丝,龙泉青瓷,皮影戏,知识图谱" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="遗珍 · 非物质文化遗产数字档案馆" />
+<meta property="og:description" content="岁月有痕，遗珍有声。以数字建档、沉浸展陈与知识图谱，让非遗被看见、被听懂、被继续。" />
+<meta property="og:locale" content="zh_CN" />
+<title>遗珍 · 非物质文化遗产数字档案馆</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b64a35'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23f4ead6' font-family='serif'%3E%E9%81%97%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "遗珍 · 非物质文化遗产数字档案馆",
+  "alternateName": "Yizhen ICH Digital Archive",
+  "description": "以数字建档、沉浸展陈、时空地图与知识图谱保存和传播中国非物质文化遗产的概念档案平台。",
+  "inLanguage": "zh-CN",
+  "about": ["非物质文化遗产", "数字档案", "传统文化"]
+}
+</script>
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-seal">遗</span>
+    <p class="loader-word">正在展开档案</p>
+    <div class="loader-track"><span></span></div>
+    <p class="loader-meta">INTANGIBLE HERITAGE · DIGITAL ARCHIVE</p>
+  </div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"><span></span></div>
+
+<a class="skip-link" href="#archive">跳至档案库</a>
+
+<header class="site-head" id="siteHead">
+  <div class="shell head-inner">
+    <a class="brand" href="#home" aria-label="遗珍 · 返回首页">
+      <span class="brand-seal">遗</span>
+      <span class="brand-text">
+        <strong>遗珍</strong>
+        <small>ICH DIGITAL ARCHIVE</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#archive" data-nav="archive">典藏</a>
+      <a href="#exhibition" data-nav="exhibition">展厅</a>
+      <a href="#map" data-nav="map">地图</a>
+      <a href="#graph" data-nav="graph">图谱</a>
+      <a href="#sound" data-nav="sound">声音</a>
+      <a href="#community" data-nav="community">共创</a>
+    </nav>
+
+    <div class="head-tools">
+      <button class="icon-btn search-trigger" type="button" aria-label="全站检索">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.4"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span>检索</span>
+        <kbd>/</kbd>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true" inert>
+  <div class="mobile-nav-inner">
+    <p class="mobile-label">INDEX / 目录</p>
+    <nav aria-label="移动端导航">
+      <a href="#archive"><span>01</span>典藏档案</a>
+      <a href="#exhibition"><span>02</span>数字展厅</a>
+      <a href="#map"><span>03</span>时空地图</a>
+      <a href="#graph"><span>04</span>知识图谱</a>
+      <a href="#sound"><span>05</span>声音博物馆</a>
+      <a href="#community"><span>06</span>公众共创</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <button class="text-btn search-trigger" type="button">检索全站档案 →</button>
+      <p>见人 · 见物 · 见生活</p>
+    </div>
+  </div>
+</div>
+
+<aside class="section-rail" id="sectionRail" aria-label="章节索引">
+  <span class="rail-word">INDEX / 章节</span>
+  <nav>
+    <a href="#home" data-rail="home" aria-label="序章"><span class="rail-name">序章</span><i></i></a>
+    <a href="#archive" data-rail="archive" aria-label="典藏"><span class="rail-name">典藏</span><i></i></a>
+    <a href="#exhibition" data-rail="exhibition" aria-label="展厅"><span class="rail-name">展厅</span><i></i></a>
+    <a href="#map" data-rail="map" aria-label="地图"><span class="rail-name">地图</span><i></i></a>
+    <a href="#graph" data-rail="graph" aria-label="图谱"><span class="rail-name">图谱</span><i></i></a>
+    <a href="#sound" data-rail="sound" aria-label="声音"><span class="rail-name">声音</span><i></i></a>
+    <a href="#community" data-rail="community" aria-label="共创"><span class="rail-name">共创</span><i></i></a>
+  </nav>
+  <span class="rail-count" id="railCount">01 / 07</span>
+</aside>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-atmosphere" aria-hidden="true">
+      <svg class="contour" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M-80 690C120 560 190 710 360 640s220-210 410-150 250 250 460 170 330-260 520-190"/>
+          <path d="M-60 740C150 610 220 760 390 690s220-210 410-150 250 250 460 170 330-260 520-190"/>
+          <path d="M-40 790C170 660 250 810 420 740s220-210 410-150 250 250 460 170 330-260 520-190"/>
+          <path d="M-120 300C90 180 160 330 330 260S550 50 740 110s250 250 460 170 330-260 520-190"/>
+          <path d="M-100 250C110 130 180 280 350 210S570 0 760 60s250 250 460 170 330-260 520-190"/>
+          <path d="M980 -80c-40 170 120 190 80 350s-180 220-80 380 220 170 200 350"/>
+          <ellipse cx="1130" cy="260" rx="260" ry="200"/>
+          <ellipse cx="1130" cy="260" rx="320" ry="250"/>
+          <ellipse cx="210" cy="690" rx="300" ry="230"/>
+        </g>
+      </svg>
+      <span class="hero-glow hero-glow-a"></span>
+      <span class="hero-glow hero-glow-b"></span>
+    </div>
+
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-reveal>
+          <span class="eyebrow-line"></span>
+          非物质文化遗产 · 数字档案计划
+          <em>EST. 2026</em>
+        </p>
+
+        <div class="title-wrap" data-reveal style="--d:.08s">
+          <h1>岁月有痕<br><span class="jade">遗珍</span>有声</h1>
+          <span class="title-seal" aria-hidden="true">活态<br>传承</span>
+        </div>
+
+        <p class="hero-lede" data-reveal style="--d:.16s">
+          从一方缂丝到一折昆腔，从节气流转到侗寨和声。<br>
+          以高保真建档、沉浸式展陈与知识图谱，<br class="desk-br">让非遗被看见、被听懂、被继续。
+        </p>
+
+        <div class="hero-actions" data-reveal style="--d:.24s">
+          <a class="btn btn-primary" href="#exhibition">
+            进入数字展厅
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#archive">
+            检索 20 份示范档案
+          </a>
+        </div>
+
+        <dl class="hero-stats" data-reveal style="--d:.32s">
+          <div>
+            <dt><span data-count="10">10</span></dt>
+            <dd>非遗门类</dd>
+          </div>
+          <div>
+            <dt><span data-count="1557">1,557</span></dt>
+            <dd>国家级项目</dd>
+          </div>
+          <div>
+            <dt><span data-count="3062">3,062</span></dt>
+            <dd>代表性传承人</dd>
+          </div>
+          <div>
+            <dt><span data-count="89000">89,000</span><i>+</i></dt>
+            <dd>数字资产</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-stage" data-reveal style="--d:.2s">
+        <div class="stage-ring" aria-hidden="true"></div>
+        <div class="stage-cross cross-a" aria-hidden="true">+</div>
+        <div class="stage-cross cross-b" aria-hidden="true">+</div>
+        <div class="stage-note note-a">
+          <span>OBJECT 001</span>
+          <b>30.0°N / 119.1°E</b>
+          <i>结构光扫描 · 0.02mm</i>
+        </div>
+        <div class="stage-note note-b">
+          <span>ARCHIVE STATUS</span>
+          <b><i class="live-dot"></i> 持续建档中</b>
+          <i>8K · 12bit · 多光谱</i>
+        </div>
+
+        <div class="arch">
+          <div class="arch-label">龙泉青瓷 · 梅子青玉壶春瓶</div>
+          <canvas id="artifactCanvas" role="img" aria-label="可拖拽旋转的龙泉青瓷玉壶春瓶三维示意"></canvas>
+          <div class="artifact-controls" role="group" aria-label="器物视图控制">
+            <button type="button" id="artifactAuto" aria-pressed="true" aria-label="暂停自动旋转" title="自动旋转">
+              <svg class="auto-on" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6v12M15 6v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              <svg class="auto-off" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6.5 18 12l-9 5.5Z" fill="currentColor"/></svg>
+            </button>
+            <button type="button" id="artifactReset" aria-label="复位视角" title="复位视角">↺</button>
+            <button type="button" id="artifactZoomOut" aria-label="缩小器物" title="缩小">−</button>
+            <button type="button" id="artifactZoomIn" aria-label="放大器物" title="放大">+</button>
+          </div>
+          <div class="arch-meta">
+            <span>三维数字器物</span>
+            <span>点击 · 360° 环绕</span>
+          </div>
+        </div>
+
+        <div class="stage-caption">
+          <span class="caption-line"></span>
+          以手抵心，以器载道
+        </div>
+      </div>
+    </div>
+
+    <div class="category-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>民间文学</span><i>◆</i><span>传统音乐</span><i>◆</i><span>传统舞蹈</span><i>◆</i><span>传统戏剧</span><i>◆</i><span>曲艺</span><i>◆</i><span>传统体育、游艺与杂技</span><i>◆</i><span>传统美术</span><i>◆</i><span>传统技艺</span><i>◆</i><span>传统医药</span><i>◆</i><span>民俗</span><i>◆</i>
+        <span>民间文学</span><i>◆</i><span>传统音乐</span><i>◆</i><span>传统舞蹈</span><i>◆</i><span>传统戏剧</span><i>◆</i><span>曲艺</span><i>◆</i><span>传统体育、游艺与杂技</span><i>◆</i><span>传统美术</span><i>◆</i><span>传统技艺</span><i>◆</i><span>传统医药</span><i>◆</i><span>民俗</span><i>◆</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ARCHIVE ================= -->
+  <section class="section archive" id="archive">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-mark">
+          <span class="cn-num">壹</span>
+          <em>ARCHIVE / 01</em>
+        </div>
+        <h2>一库一档，<br><em>见其来路。</em></h2>
+        <p>以国家非遗十大门类为经纬，为每一项技艺、每一段声腔建立可检索的数字身份：历史渊源、工艺工序、传承谱系与完整资产包。</p>
+      </div>
+
+      <div class="archive-toolbar" data-reveal>
+        <div class="inline-search">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.4"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <input type="search" id="archiveSearch" placeholder="检索项目、地区或类别…" aria-label="检索非遗档案" autocomplete="off" />
+          <button type="button" id="clearSearch" aria-label="清空检索" hidden>×</button>
+        </div>
+        <div class="filter-pills" id="filterPills" role="group" aria-label="按门类筛选">
+          <button type="button" class="filter-pill is-active" data-category="全部">全部</button>
+          <button type="button" class="filter-pill" data-category="传统戏剧">传统戏剧</button>
+          <button type="button" class="filter-pill" data-category="传统技艺">传统技艺</button>
+          <button type="button" class="filter-pill" data-category="传统音乐">传统音乐</button>
+          <button type="button" class="filter-pill" data-category="民俗">民俗</button>
+          <button type="button" class="filter-pill" data-category="传统美术">传统美术</button>
+          <button type="button" class="filter-pill" data-category="传统医药">传统医药</button>
+          <button type="button" class="filter-pill" data-category="民间文学">民间文学</button>
+          <button type="button" class="filter-pill" data-category="传统舞蹈">传统舞蹈</button>
+          <button type="button" class="filter-pill" data-category="曲艺">曲艺</button>
+          <button type="button" class="filter-pill" data-category="传统体育、游艺与杂技">传统体育</button>
+        </div>
+        <div class="archive-meta">
+          <button class="saved-filter" id="savedFilter" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5h11v15l-5.5-3.6-5.5 3.6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            <span>我的收藏</span>
+            <b id="savedCount">0</b>
+          </button>
+          <p class="archive-count"><b id="archiveCount" aria-live="polite">14</b><span>份示范档案</span></p>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid" data-reveal></div>
+
+      <div class="archive-empty" id="archiveEmpty" hidden>
+        <p class="kicker">NO MATCH / 未找到</p>
+        <h3>档案里暂时没有这一页。</h3>
+        <p>换一个更宽泛的关键词，或回到全部门类看看。你也可以在「共创」中提交一条线索。</p>
+        <button class="text-btn" id="resetArchive" type="button">清除筛选 <span>→</span></button>
+      </div>
+
+      <div class="archive-foot" data-reveal>
+        <p><span class="dot"></span>档案字段参考都柏林核心（Dublin Core）与国家非遗名录体系，当前为概念演示数据。</p>
+        <div class="archive-foot-actions">
+          <button class="text-btn" id="randomArchive" type="button">随机翻阅 <span>↗</span></button>
+          <button class="text-btn" id="expandArchive" type="button">展开全部档案 <span>↓</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXHIBITION ================= -->
+  <section class="section exhibition" id="exhibition">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-mark">
+          <span class="cn-num">贰</span>
+          <em>EXHIBITION / 02</em>
+        </div>
+        <h2>不止于观看，<br><em>更在于身临。</em></h2>
+        <p>三维器物、全景戏台与多光谱影像，让档案从纸面站起来。每一个视角，都是一次与手艺人对坐的时刻。</p>
+      </div>
+
+      <div class="exhibit-grid">
+        <article class="theatre" id="theatre" data-reveal>
+          <div class="theatre-scene" id="theatreScene">
+            <div class="scene-stage">
+            <svg viewBox="0 0 1000 620" preserveAspectRatio="xMidYMid slice" aria-label="皮影戏数字全景舞台">
+              <defs>
+                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0a1a16"/>
+                  <stop offset=".55" stop-color="#10251e"/>
+                  <stop offset="1" stop-color="#08110e"/>
+                </linearGradient>
+                <radialGradient id="moonGrad" cx=".4" cy=".38" r=".65">
+                  <stop offset="0" stop-color="#f7ecd2"/>
+                  <stop offset=".65" stop-color="#dfcfa9"/>
+                  <stop offset="1" stop-color="#b9a57d"/>
+                </radialGradient>
+                <radialGradient id="moonHalo">
+                  <stop offset="0" stop-color="#f2e2b9" stop-opacity=".4"/>
+                  <stop offset=".55" stop-color="#d8c393" stop-opacity=".1"/>
+                  <stop offset="1" stop-color="#d8c393" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f6e7c4"/>
+                  <stop offset=".55" stop-color="#e7d2a7"/>
+                  <stop offset="1" stop-color="#c9ac77"/>
+                </linearGradient>
+                <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1b2a21"/>
+                  <stop offset="1" stop-color="#070e0b"/>
+                </linearGradient>
+                <radialGradient id="screenLight" cx=".5" cy=".5" r=".65">
+                  <stop offset="0" stop-color="#fff4d8" stop-opacity=".85"/>
+                  <stop offset=".7" stop-color="#f2d59a" stop-opacity=".22"/>
+                  <stop offset="1" stop-color="#f2d59a" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="22"/>
+                </filter>
+                <filter id="tinyGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="5"/>
+                </filter>
+                <clipPath id="screenClip"><rect x="300" y="138" width="400" height="326" rx="3"/></clipPath>
+              </defs>
+
+              <rect width="1000" height="620" fill="url(#skyGrad)"/>
+              <g class="scene-moon">
+                <circle cx="790" cy="148" r="126" fill="url(#moonHalo)"/>
+                <circle cx="790" cy="148" r="62" fill="url(#moonGrad)"/>
+                <circle cx="772" cy="132" r="9" fill="#c2ae86" opacity=".4"/>
+                <circle cx="807" cy="163" r="13" fill="#c2ae86" opacity=".28"/>
+                <circle cx="783" cy="176" r="5" fill="#c2ae86" opacity=".35"/>
+              </g>
+
+              <g class="scene-mountains" fill="none" stroke="#253d32">
+                <path d="M-20 370 120 270l86 70 100-118 94 110 88-64 120 112 110-84 112 96 90-54 100 74v216H-20Z" fill="#0c1914" stroke="none"/>
+                <path d="M-20 424 90 356l80 48 92-76 80 70 100-44 104 66 96-52 110 60 108-42 150 84v154H-20Z" fill="#101f19" stroke="none"/>
+                <path d="M-20 470c120-40 180 14 300-18s180-54 300-20 190 52 440 6" stroke="#2e4a3b" stroke-opacity=".5"/>
+                <path d="M-20 500c150-34 210 12 340-12s210-44 330-12 190 40 370 2" stroke="#2e4a3b" stroke-opacity=".3"/>
+              </g>
+
+              <g class="scene-floor">
+                <path d="M0 474h1000v146H0z" fill="url(#floorGrad)"/>
+                <path d="M0 474h1000" stroke="#3d5445" stroke-opacity=".45"/>
+                <path d="M120 620 356 474M880 620 644 474M500 620V474" stroke="#2a3d32" stroke-opacity=".35"/>
+              </g>
+
+              <g class="scene-screen">
+                <rect x="284" y="122" width="432" height="358" rx="6" fill="#1a130c"/>
+                <rect x="300" y="138" width="400" height="326" rx="3" fill="url(#screenGrad)"/>
+                <g clip-path="url(#screenClip)">
+                  <rect x="300" y="138" width="400" height="326" fill="url(#screenLight)" opacity=".55"/>
+                  <g stroke="#8c744c" stroke-opacity=".25" stroke-width="1">
+                    <path d="M300 210h400M300 282h400M300 354h400M300 426h400"/>
+                    <path d="M380 138v326M460 138v326M540 138v326M620 138v326"/>
+                  </g>
+
+                  <!-- 第一折 · 武松打虎 -->
+                  <g class="scene-act act-a is-on" transform="translate(500 342)">
+                    <g class="act-inner">
+                      <g fill="#c96a35" opacity=".92">
+                        <path d="M-96 78c-26-38-16-74 12-92 17-11 38-9 52 4l18-16c2 12 8 22 18 28 13 9 19 23 14 37l-6 16-10 30c-8 18-26 28-48 32-22 4-40-2-56-10Z"/>
+                        <circle cx="22" cy="-30" r="17"/>
+                        <path d="M8-42c-4-7 2-13 9-13s13 6 9 13Z"/>
+                        <path d="M-88 52c-26 4-46 12-58 24" stroke="#8a3a1c" stroke-width="9" fill="none" stroke-linecap="round"/>
+                        <path d="M-46 88 78 96" stroke="#8a3a1c" stroke-width="7" stroke-linecap="round"/>
+                      </g>
+                      <g fill="#4a6fa5" stroke="#1b3352" stroke-width="1">
+                        <path d="M64 88c-5-34-1-60 7-76 5-11 11-17 15-19-1-8 3-14 9-14 7 0 11 5 10 13 7 5 13 15 14 31 3 27 3 45 1 65h-11l-4-41-4 41h-12l-3-44-4 44Z"/>
+                        <path d="M40-10 128-58" stroke="#8a3a1c" stroke-width="6" fill="none" stroke-linecap="round"/>
+                      </g>
+                    </g>
+                  </g>
+
+                  <!-- 第二折 · 三打白骨精 -->
+                  <g class="scene-act act-b" transform="translate(500 342)">
+                    <g class="act-inner">
+                      <g fill="#c9a227" stroke="#6b5410" stroke-width="1">
+                        <circle cx="-66" cy="-40" r="15"/>
+                        <path d="M-80-52c-5-8 2-14 10-14s15 6 10 14Z"/>
+                        <path d="M-66-25c-10-18-20-28-32-30-3 8-5 16-5 26l-10 22c-6 14-4 32 4 48l10 26c2 6 4 8 8 8l2-52 4 46c2 6 5 8 9 8l2-56 4 50c1 5 4 7 8 7l-1-60c14 6 26 8 36 6l12-28c8-18 6-36-4-52-8-12-20-20-36-22Z"/>
+                        <path d="M-110 8 24 44" stroke="#6b5410" stroke-width="5" fill="none" stroke-linecap="round"/>
+                      </g>
+                      <g fill="#8a3d5c" stroke="#471a2c" stroke-width="1">
+                        <path d="M60 88c-4-32 0-56 7-70 5-10 10-15 14-17-1-7 3-13 9-13 6 0 10 5 9 12 7 5 12 14 13 29 3 25 2 40 1 59h-10l-4-37-3 37h-11l-3-40-3 40Z"/>
+                        <path d="M40-6 116-72" stroke="#471a2c" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <path d="M116-72c14-10 28-8 40 4" stroke="#c7a86a" stroke-width="2" fill="none" opacity=".6"/>
+                      </g>
+                    </g>
+                  </g>
+
+                  <!-- 第三折 · 白蛇传 -->
+                  <g class="scene-act act-c" transform="translate(500 342)">
+                    <g class="act-inner">
+                      <path d="M-120 96c30-34 70-44 116-30s80 6 116-18 40-20 58-6" fill="none" stroke="#5c4630" stroke-width="8" stroke-linecap="round"/>
+                      <path d="M-96 62c-6-8 2-15 10-15s16 7 10 15Z" fill="none" stroke="#5c4630" stroke-width="3"/>
+                      <circle cx="-62" cy="22" r="22" fill="#8fbfae" stroke="#3a5c50" stroke-width="1"/>
+                      <g fill="#8fbfae" stroke="#3a5c50" stroke-width="1">
+                        <path d="M-84 88c-4-30 0-52 6-66 4-10 9-15 13-17-1-7 3-12 8-12 6 0 10 4 9 11 6 4 11 13 12 27 3 25 3 40 1 57h-10l-4-36-3 36h-11l-3-39-3 39Z"/>
+                        <path d="M40 88c-3-28 1-48 7-62 4-9 9-14 12-16-1-6 3-11 8-11 5 0 9 4 8 10 6 4 10 12 11 25 2 23 2 35 1 54h-9l-3-33-3 33h-10l-3-36-3 36Z"/>
+                        <path d="M-28-34c6-18 20-30 38-34 16-3 28 3 36 16" stroke="#3a5c50" stroke-width="4" fill="none" stroke-linecap="round"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <rect x="300" y="138" width="400" height="326" rx="3" fill="none" stroke="#6e5633" stroke-width="2"/>
+                <rect x="284" y="122" width="432" height="358" rx="6" fill="none" stroke="#3b2c1a" stroke-width="6"/>
+                <g fill="none" stroke="#8d6f3f" stroke-width="1.5" opacity=".55">
+                  <path d="M284 122h432M284 480h432"/>
+                  <circle cx="284" cy="122" r="5" fill="#8d6f3f"/>
+                  <circle cx="716" cy="122" r="5" fill="#8d6f3f"/>
+                  <circle cx="284" cy="480" r="5" fill="#8d6f3f"/>
+                  <circle cx="716" cy="480" r="5" fill="#8d6f3f"/>
+                </g>
+              </g>
+
+              <g class="puppets">
+                <g transform="translate(430 468)">
+                  <g class="puppet puppet-a">
+                    <g stroke="#0b0805" fill="#120b06">
+                      <circle cx="0" cy="-156" r="23"/>
+                      <path d="M-24-176c6-16 18-28 30-28s25 12 27 28c-5 9-12 13-18 6-4 9-16 10-21 0-5 7-13 4-18-6Z" fill="#1b120a"/>
+                      <path d="M-7-134h14l4 22h-22Z"/>
+                      <path d="M-30-112c18-9 42-9 60 0l13 76-18 8-7-38-6 92h-17l-2-76-4 76h-17l-4-92-8 40-17-10Z"/>
+                      <path d="M-30-108c-18 8-34 28-42 52l9 6c12-18 26-32 40-38Z"/>
+                      <path d="M30-108c18 8 34 28 42 52l-9 6c-12-18-26-32-40-38Z"/>
+                      <path d="M-12 18-4 94l-14 2-8-78ZM12 18l8 76 14-2-8-78Z"/>
+                      <path d="M-22 96h22v6h-22ZM12 94h22v6H12Z"/>
+                    </g>
+                    <g stroke="#c7a86a" stroke-width="1.2" opacity=".7">
+                      <path d="M-30-110 30-110M-20-34h40M-40-34v42M40-34v42"/>
+                      <circle cx="0" cy="-110" r="3" fill="#c7a86a"/>
+                      <circle cx="-40" cy="8" r="3" fill="#c7a86a"/>
+                      <circle cx="40" cy="8" r="3" fill="#c7a86a"/>
+                    </g>
+                    <path d="M46-48 92 52M54-18 108 44" stroke="#6e5633" stroke-width="3" stroke-linecap="round"/>
+                  </g>
+                </g>
+
+                <g transform="translate(602 492) scale(.78)">
+                  <g class="puppet puppet-b">
+                    <g stroke="#0b0805" fill="#120b06">
+                      <circle cx="0" cy="-150" r="20"/>
+                      <path d="M-20-168c5-14 15-24 25-24s19 10 22 24c-6 7-12 8-16 2-5 7-14 7-18 0-4 5-9 4-13-2Z" fill="#1b120a"/>
+                      <path d="M-5-130h12l3 18h-18Z"/>
+                      <path d="M-26-112c15-7 36-7 50 0l10 70-15 6-6-34-5 84h-14l-2-70-3 70h-14l-3-84-6 36-15-8Z"/>
+                      <path d="M-26-108c-15 7-28 24-35 45l8 5c10-16 22-27 33-33Z"/>
+                      <path d="M26-108c15 7 28 24 35 45l-8 5c-10-16-22-27-33-33Z"/>
+                    </g>
+                    <path d="M38-44 76 42M46-12 88 36" stroke="#6e5633" stroke-width="2.5" stroke-linecap="round"/>
+                  </g>
+                </g>
+              </g>
+
+              <g class="scene-curtains">
+                <path d="M0 0h158c-12 54-8 106 12 158 16 42 4 88-26 132-28 42-34 88-18 148 8 30 2 60-14 88H0Z" fill="#2a0f0c" opacity=".92"/>
+                <path d="M0 0h104c-4 60 2 112 20 160 14 40 2 82-22 122-26 42-30 84-14 134 4 14 2 26-4 38H0Z" fill="#3a1510" opacity=".8"/>
+                <path d="M1000 0H842c12 54 8 106-12 158-16 42-4 88 26 132 28 42 34 88 18 148-8 30-2 60 14 88h112Z" fill="#2a0f0c" opacity=".92"/>
+                <path d="M1000 0H896c4 60-2 112-20 160-14 40-2 82 22 122 26 42 30 84 14 134-4 14-2 26 4 38h84Z" fill="#3a1510" opacity=".8"/>
+                <g stroke="#7a2e22" stroke-opacity=".45" fill="none">
+                  <path d="M26 0c8 90 0 180-12 270s-2 180 10 270"/>
+                  <path d="M64 0c10 90 2 180-10 270s-2 180 8 270"/>
+                  <path d="M974 0c-8 90 0 180 12 270s2 180-10 270"/>
+                  <path d="M936 0c-10 90-2 180 10 270s2 180-8 270"/>
+                </g>
+              </g>
+
+              <g class="scene-dust" fill="#f6e7c4">
+                <circle cx="220" cy="200" r="1.6" opacity=".35"/>
+                <circle cx="340" cy="90" r="1.1" opacity=".25"/>
+                <circle cx="690" cy="120" r="1.4" opacity=".3"/>
+                <circle cx="760" cy="320" r="1" opacity=".2"/>
+                <circle cx="240" cy="410" r="1.2" opacity=".22"/>
+                <circle cx="880" cy="240" r="1.5" opacity=".28"/>
+              </g>
+            </svg>
+            </div>
+
+            <video class="piying-video" id="piyingVideo" playsinline preload="metadata" loop
+              poster="assets/images/piying-cover.jpg"
+              aria-label="皮影戏纪录片《皮影人生》片段，点击开演播放">
+              <source src="assets/videos/piying.mp4" type="video/mp4" />
+              <source src="https://www.ihchina.cn/uploadfiles/20220610/01/09.mp4" type="video/mp4" />
+            </video>
+            <div class="theatre-light" aria-hidden="true"></div>
+
+            <div class="theatre-subtitle" id="theatreSubtitle" aria-live="polite">
+              <span class="sub-act" id="subAct">第一折 · 武松打虎</span>
+              <p id="subLine">灯影起处，好戏开锣 · 点击右下角开演。</p>
+            </div>
+            <div class="theatre-acts" id="theatreActs" aria-hidden="true">
+              <i class="is-on"></i><i></i><i></i>
+            </div>
+
+            <div class="theatre-top">
+              <span class="live-badge"><i></i> LIVE STAGE</span>
+              <span class="theatre-code">PANORAMA / 360°</span>
+            </div>
+            <div class="theatre-controls">
+              <button class="round-btn" id="theatrePlay" type="button" aria-label="播放皮影戏舞台动画" aria-pressed="false">
+                <svg class="ic-play" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6.5 18 12l-9 5.5Z" fill="currentColor"/></svg>
+                <svg class="ic-pause" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6v12M15 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </button>
+              <button class="ghost-round" id="theatreFull" type="button" aria-label="全屏观看">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M9 20H4v-5m11 5h5v-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+            <p class="theatre-hint">移动鼠标 · 环绕戏台 · 点击开演</p>
+          </div>
+          <div class="theatre-meta">
+            <div>
+              <p class="kicker">常设展 · 光影之间</p>
+              <h3>皮影戏：一口道尽千古事</h3>
+            </div>
+            <p class="theatre-desc">幕布后是真正的皮影戏纪录片《皮影人生》（中国非物质文化遗产网）：灯、影、人与唱腔同场。开演播放纪录片，无视频时自动切换三折皮影小戏《武松打虎》《三打白骨精》《白蛇传》。</p>
+            <a class="text-btn" href="#graph">查看知识图谱 <span>→</span></a>
+          </div>
+        </article>
+
+        <div class="exhibit-side">
+          <article class="exhibit-card" tabindex="0" role="button" data-open="artifact" aria-label="进入展项：可旋转的器物" data-reveal>
+            <div class="exhibit-icon">
+              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m16 3 11 6.5v13L16 29 5 22.5v-13L16 3Z" stroke="currentColor" stroke-width="1.2"/><path d="M5 9.5 16 16l11-6.5M16 16v13" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <div>
+              <p class="kicker">3D COLLECTION</p>
+              <h3>可旋转的器物</h3>
+              <p>点击进入 360° 环绕展厅，自由旋转、缩放青瓷玉壶春瓶。</p>
+              <span class="exhibit-go">进入展项 <i>→</i></span>
+            </div>
+            <span class="card-index">01</span>
+          </article>
+          <article class="exhibit-card" tabindex="0" role="button" data-open="spectral" aria-label="进入展项：看见褪色之前" data-reveal style="--d:.08s">
+            <div class="exhibit-icon">
+              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.2"/><path d="M4 16h24M16 4c4 4 6 8 6 12s-2 8-6 12c-4-4-6-8-6-12s2-8 6-12Z" stroke="currentColor" stroke-width="1.2"/></svg>
+            </div>
+            <div>
+              <p class="kicker">SPECTRAL IMAGING</p>
+              <h3>看见褪色之前</h3>
+              <p>拖动对比滑杆，在可见光、紫外荧光与红外波段间切换。</p>
+              <span class="exhibit-go">进入展项 <i>→</i></span>
+            </div>
+            <span class="card-index">02</span>
+          </article>
+          <article class="exhibit-card" tabindex="0" role="button" data-open="sound" aria-label="进入展项：听见时间的纹理" data-reveal style="--d:.16s">
+            <div class="exhibit-icon">
+              <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M8 12v8M12 8v16M16 10v12M20 6v20M24 12v8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <p class="kicker">SOUND MUSEUM</p>
+              <h3>听见时间的纹理</h3>
+              <p>五段声音档案，点击曲目直达声音博物馆并开始播放。</p>
+              <span class="exhibit-go">进入展项 <i>→</i></span>
+            </div>
+            <span class="card-index">03</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="digitize-strip" data-reveal>
+        <div class="strip-copy">
+          <p class="kicker">DIGITIZATION STANDARD</p>
+          <h3>存档，是为了更好地看见。</h3>
+        </div>
+        <div class="spec"><b>0.02<span>mm</span></b><small>三维扫描精度</small></div>
+        <div class="spec"><b>12<span>bit</span></b><small>色彩采样位深</small></div>
+        <div class="spec"><b>96<span>kHz</span></b><small>无损音频采样</small></div>
+        <div class="spec"><b>11.6<span>亿</span></b><small>单幅影像像素</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAP ================= -->
+  <section class="section map-section" id="map">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-mark">
+          <span class="cn-num">叁</span>
+          <em>GEOGRAPHY / 03</em>
+        </div>
+        <h2>在山河之间，<br><em>寻找它的来处。</em></h2>
+        <p>以流域为经，以时间为纬。非遗从来不是孤立的标本，它沿着河流、商路与迁徙的足迹，生长成一张活的地理网络。</p>
+      </div>
+
+      <div class="map-board" data-reveal>
+        <div class="map-head">
+          <div>
+            <p class="kicker">CULTURAL BASINS / 流域视角</p>
+            <h3>数字非遗时空地图</h3>
+          </div>
+          <div class="era-filter" id="eraFilter" role="group" aria-label="按列入时间筛选">
+            <button type="button" class="is-active" data-era="all">全部</button>
+            <button type="button" data-era="early">2001—2009</button>
+            <button type="button" data-era="mid">2010—2016</button>
+            <button type="button" data-era="late">2017—2025</button>
+          </div>
+        </div>
+
+        <div class="map-canvas" id="mapCanvas">
+          <svg class="map-svg" viewBox="0 0 1100 620" preserveAspectRatio="xMidYMid meet" aria-label="非遗分布示意地图">
+            <defs>
+              <radialGradient id="mapVignette" cx=".5" cy=".45" r=".7">
+                <stop offset="0" stop-color="#12261e" stop-opacity=".35"/>
+                <stop offset="1" stop-color="#050c09" stop-opacity=".9"/>
+              </radialGradient>
+              <linearGradient id="riverYellow" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#c7a86a" stop-opacity=".1"/>
+                <stop offset=".45" stop-color="#c7a86a" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#c7a86a" stop-opacity=".15"/>
+              </linearGradient>
+              <linearGradient id="riverYangtze" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#8fc9b3" stop-opacity=".1"/>
+                <stop offset=".5" stop-color="#8fc9b3" stop-opacity=".5"/>
+                <stop offset="1" stop-color="#8fc9b3" stop-opacity=".12"/>
+              </linearGradient>
+              <filter id="nodeGlow" x="-200%" y="-200%" width="400%" height="400%">
+                <feGaussianBlur stdDeviation="4"/>
+              </filter>
+              <pattern id="mapGrid" width="55" height="55" patternUnits="userSpaceOnUse">
+                <path d="M55 0H0v55" fill="none" stroke="#8fc9b3" stroke-opacity=".055" stroke-width="1"/>
+              </pattern>
+            </defs>
+
+            <rect width="1100" height="620" fill="#08130f"/>
+            <rect width="1100" height="620" fill="url(#mapGrid)"/>
+            <rect width="1100" height="620" fill="url(#mapVignette)"/>
+
+            <g class="map-contours" fill="none" stroke="#8fc9b3" stroke-opacity=".09">
+              <path d="M-40 130C140 70 240 150 380 115s220-90 380-30 220 90 380 40"/>
+              <path d="M-40 170C150 110 250 190 390 155s220-90 380-30 220 90 380 40"/>
+              <path d="M-60 470C120 410 250 500 400 450s240-130 420-60 210 100 340 45"/>
+              <path d="M-60 510C130 450 260 540 410 490s240-130 420-60 210 100 340 45"/>
+              <path d="M-20 570C150 520 280 590 430 550s250-100 410-40 190 70 300 30"/>
+              <ellipse cx="255" cy="345" rx="150" ry="190"/>
+              <ellipse cx="255" cy="345" rx="205" ry="245"/>
+              <ellipse cx="830" cy="360" rx="180" ry="150"/>
+              <ellipse cx="830" cy="360" rx="245" ry="210"/>
+              <ellipse cx="560" cy="250" rx="210" ry="130"/>
+            </g>
+
+            <g class="map-basins" fill="#8fc9b3" opacity=".18" font-size="10" letter-spacing="4">
+              <text x="160" y="300">青 藏</text>
+              <text x="470" y="200">关 中</text>
+              <text x="700" y="155">中 原</text>
+              <text x="760" y="530">江 南</text>
+              <text x="455" y="505">黔 东 南</text>
+              <text x="850" y="420">岭 南</text>
+            </g>
+
+            <g class="map-rivers" fill="none" stroke-linecap="round">
+              <path d="M85 300C180 250 230 330 330 300s140-90 240-50 150 150 250 110 130-80 220-45" stroke="url(#riverYellow)" stroke-width="2"/>
+              <path d="M120 430C220 390 280 440 380 415s150-80 250-45 140 95 240 70 110-55 170-35" stroke="url(#riverYangtze)" stroke-width="2.4"/>
+              <path d="M120 430C220 390 280 440 380 415s150-80 250-45 140 95 240 70 110-55 170-35" stroke="#b6e3d2" stroke-opacity=".2" stroke-width="6" filter="url(#nodeGlow)"/>
+            </g>
+            <g class="map-river-labels" fill="#c7a86a" font-size="10" letter-spacing=".3em" opacity=".65">
+              <text x="292" y="272" transform="rotate(-9 292 272)">黄 河</text>
+              <text x="520" y="400" transform="rotate(4 520 400)" fill="#8fc9b3">长 江</text>
+            </g>
+
+            <g class="map-routes" fill="none" stroke="#c7a86a" stroke-opacity=".18" stroke-dasharray="3 7">
+              <path d="M300 350C380 300 470 300 560 285s140-40 175-50"/>
+              <path d="M735 245C760 270 780 295 805 315s30 55 35 85"/>
+              <path d="M545 430C600 390 650 370 690 360s70-40 110-30"/>
+            </g>
+
+            <g id="mapNodes"></g>
+
+            <g class="map-compass" transform="translate(1018 86)" fill="none" stroke="#8fc9b3" stroke-opacity=".45">
+              <circle r="26" stroke-width="1"/>
+              <circle r="20" stroke-width="1" stroke-dasharray="2 4"/>
+              <path d="M0-16 5 4 0 0-5 4Z" fill="#c7a86a" stroke="none"/>
+              <text x="0" y="-33" text-anchor="middle" fill="#8fc9b3" font-size="9" stroke="none" letter-spacing="2">N</text>
+            </g>
+
+            <g class="map-scale" transform="translate(60 570)" stroke="#8fc9b3" stroke-opacity=".45" fill="#8fc9b3">
+              <path d="M0 0h120" stroke-width="1"/>
+              <path d="M0-4v8M60-3v6M120-4v8" stroke-width="1"/>
+              <text x="0" y="18" font-size="8" fill-opacity=".7" stroke="none" letter-spacing="1">0</text>
+              <text x="55" y="18" font-size="8" fill-opacity=".7" stroke="none" letter-spacing="1">250</text>
+              <text x="108" y="18" font-size="8" fill-opacity=".7" stroke="none" letter-spacing="1">500 KM</text>
+            </g>
+            <text x="60" y="48" fill="#8fc9b3" fill-opacity=".4" font-size="9" letter-spacing="3">ICH DISTRIBUTION / DEMO MAP</text>
+          </svg>
+
+          <div class="map-tip" id="mapTip" hidden></div>
+
+          <aside class="map-card" id="mapCard" aria-live="polite">
+            <div class="map-card-top">
+              <span class="map-card-cat">传统技艺</span>
+              <span class="map-card-year">2009</span>
+            </div>
+            <h4>苏州缂丝织造技艺</h4>
+            <p class="map-card-region">江苏 · 苏州 · 江南</p>
+            <p class="map-card-note">“通经断纬”，一梭一纬间织出书画的层次。缂丝不作底衬，正反两面皆可观赏。</p>
+            <button class="text-btn" id="mapCardBtn" type="button">查阅完整档案 <span>→</span></button>
+          </aside>
+        </div>
+
+        <div class="map-foot">
+          <div class="map-legend" id="mapLegend" role="group" aria-label="按门类筛选地图">
+            <button type="button" class="is-active" data-map-cat="all"><i style="--dot:#ece5d5"></i>全部</button>
+            <button type="button" data-map-cat="传统戏剧"><i style="--dot:#d15a42"></i>传统戏剧</button>
+            <button type="button" data-map-cat="传统音乐"><i style="--dot:#8fc9b3"></i>传统音乐</button>
+            <button type="button" data-map-cat="传统技艺"><i style="--dot:#c7a86a"></i>传统技艺</button>
+            <button type="button" data-map-cat="传统舞蹈"><i style="--dot:#c98a9a"></i>传统舞蹈</button>
+            <button type="button" data-map-cat="传统体育、游艺与杂技"><i style="--dot:#7fa6c9"></i>传统体育</button>
+            <button type="button" data-map-cat="传统医药"><i style="--dot:#a87f9a"></i>传统医药</button>
+            <button type="button" data-map-cat="民俗"><i style="--dot:#9aa89f"></i>民俗</button>
+          </div>
+          <p>点击节点或下方条目，展开地方档案 · 时间轴按 UNESCO 名录列入年份示意</p>
+        </div>
+
+        <div class="mobile-map-list" id="mobileMapList" aria-label="非遗分布地点列表"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GRAPH ================= -->
+  <section class="section graph-section" id="graph">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-mark">
+          <span class="cn-num">肆</span>
+          <em>KNOWLEDGE / 04</em>
+        </div>
+        <h2>万物有联，<br><em>一图见其脉络。</em></h2>
+        <p>项目、传承人、流派、剧目、材料与地域，在知识图谱中彼此牵引。拖动一个节点，看见一门手艺背后的整张网络。</p>
+      </div>
+
+      <div class="graph-board" data-reveal>
+        <div class="graph-toolbar" id="graphFilter" role="group" aria-label="知识图谱节点筛选">
+          <button type="button" class="is-active" data-type="all">全部</button>
+          <button type="button" data-type="project">项目</button>
+          <button type="button" data-type="person">人物</button>
+          <button type="button" data-type="craft">技艺</button>
+          <button type="button" data-type="place">地域</button>
+        </div>
+        <canvas id="graphCanvas" role="img" aria-label="皮影戏非遗知识图谱，可拖动节点、滚轮缩放、空白处平移" tabindex="0"></canvas>
+        <p class="graph-hint">拖拽节点 · 滚轮缩放 · 空白处平移</p>
+
+        <div class="graph-zoom" role="group" aria-label="图谱缩放控制">
+          <button type="button" data-graph-zoom="out" aria-label="缩小图谱">−</button>
+          <span id="graphZoomLabel">100%</span>
+          <button type="button" data-graph-zoom="in" aria-label="放大图谱">+</button>
+          <button type="button" data-graph-zoom="reset" aria-label="复位图谱">↺</button>
+        </div>
+
+        <aside class="graph-panel" id="graphPanel" aria-live="polite">
+          <span class="graph-type" id="graphType">项目 · PROJECT</span>
+          <h3 id="graphTitle">皮影戏</h3>
+          <p id="graphDesc">以兽皮或纸板雕刻人物剪影，借灯影投射于幕布，配以唱腔与操纵，演尽千古故事。</p>
+          <div class="graph-rel-title">关联节点 <span id="graphRelCount">8</span></div>
+          <div class="graph-chips" id="graphChips"></div>
+        </aside>
+      </div>
+
+      <div class="graph-foot" data-reveal>
+        <p><span class="dot"></span>节点关系依据公开资料整理，仅作知识组织方式演示。</p>
+        <p class="mono">MODEL · PROJECT — INHERITOR — SCHOOL — PLAY — CRAFT — PLACE</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOUND ================= -->
+  <section class="section sound-section" id="sound">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-mark">
+          <span class="cn-num">伍</span>
+          <em>SOUND / 05</em>
+        </div>
+        <h2>让耳朵，<br><em>先抵达现场。</em></h2>
+        <p>一声笛、一次触弦、一段方言。声音是最容易消失的档案，也是最难被替代的记忆。戴上耳机，听见时间的纹理。</p>
+      </div>
+
+      <div class="sound-room" data-reveal>
+        <div class="sound-visual">
+          <div class="sound-disc" id="soundDisc">
+            <div class="disc-ring ring-a"></div>
+            <div class="disc-ring ring-b"></div>
+            <canvas id="soundCanvas" aria-hidden="true"></canvas>
+            <button class="sound-play" id="soundPlay" type="button" aria-label="播放声音博物馆曲目" aria-pressed="false">
+              <svg class="ic-play" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6.5 18 12l-9 5.5Z" fill="currentColor"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6v12M15 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <span class="disc-seal">声</span>
+          </div>
+
+          <div class="sound-now">
+            <p class="kicker" id="soundKicker">NOW PLAYING · 01</p>
+            <h3 id="soundTitle">牡丹亭 · 游园</h3>
+            <p id="soundMeta">昆曲 · 江苏昆山 · 曲笛与水磨腔</p>
+          </div>
+
+          <div class="sound-progress" aria-hidden="true">
+            <span id="soundBar"></span>
+          </div>
+          <div class="sound-time">
+            <span id="soundElapsed">00:00</span>
+            <span>LOOP · 00:32</span>
+          </div>
+
+          <div class="sound-volume">
+            <button type="button" id="soundMute" aria-pressed="false" aria-label="静音">
+              <svg class="vol-on" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9.5h4l5-4v13l-5-4H4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <svg class="vol-off" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9.5h4l5-4v13l-5-4H4Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="m16.5 9.5 4 4m0-4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </button>
+            <input type="range" id="soundVolume" min="0" max="100" value="55" step="1" aria-label="音量" />
+            <span id="soundVolumeValue">55</span>
+          </div>
+        </div>
+
+        <div class="sound-list-wrap">
+          <div class="sound-list-head">
+            <p class="kicker">SELECTED RECORDINGS / 五段声音</p>
+            <span>96kHz / 24bit</span>
+          </div>
+          <div class="track-list" id="trackList"></div>
+          <p class="sound-disclaimer">演示音频由 Web Audio 实时合成，用于呈现交互与声场设计，并非原始录音。</p>
+        </div>
+      </div>
+
+      <div class="transcript" data-reveal>
+        <div class="transcript-side">
+          <p class="kicker">TRANSCRIPT / 声音文本</p>
+          <h3>唱词、译文<br>与聆听笔记</h3>
+          <p>声音档案不止保存音频，也保存语言、语境与身体记忆。</p>
+        </div>
+        <div class="transcript-main">
+          <div class="transcript-tabs" role="tablist" aria-label="声音文本视图">
+            <button type="button" role="tab" aria-selected="true" data-ttab="original">唱词 / 题解</button>
+            <button type="button" role="tab" aria-selected="false" data-ttab="translation">英译</button>
+            <button type="button" role="tab" aria-selected="false" data-ttab="note">聆听笔记</button>
+          </div>
+          <blockquote id="transcriptText">原来姹紫嫣红开遍，似这般都付与断井颓垣。良辰美景奈何天，赏心乐事谁家院。</blockquote>
+          <p class="transcript-note" id="transcriptNote">《牡丹亭·惊梦》【皂罗袍】。水磨腔以“冷板曲”著称，字头、字腹、字尾交代清楚，一唱三叹。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMUNITY ================= -->
+  <section class="section community" id="community">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div class="section-mark">
+          <span class="cn-num">陆</span>
+          <em>CO-CREATE / 06</em>
+        </div>
+        <h2>档案不是终点，<br><em>而是一次邀约。</em></h2>
+        <p>一条线索、一次讲述、一场研学，都可能让沉睡的记忆重新进入生活。非遗的未来，需要更多人一起续写。</p>
+      </div>
+
+      <div class="community-grid">
+        <div class="community-left" data-reveal>
+          <div class="action-list">
+            <a href="#clueForm" class="action-item">
+              <span class="action-no">01</span>
+              <div>
+                <h3>提供一条非遗线索</h3>
+                <p>民间技艺、濒危项目、老艺人口述，都值得被记录。</p>
+              </div>
+              <span class="action-arrow">↗</span>
+            </a>
+            <a href="#clueForm" class="action-item">
+              <span class="action-no">02</span>
+              <div>
+                <h3>预约一场研学</h3>
+                <p>面向学校与机构的非遗工作坊、田野观察与数字建档课程。</p>
+              </div>
+              <span class="action-arrow">↗</span>
+            </a>
+            <a href="#clueForm" class="action-item">
+              <span class="action-no">03</span>
+              <div>
+                <h3>成为共建者</h3>
+                <p>传承人、研究者、设计师与志愿者，一起补全这张文化网络。</p>
+              </div>
+              <span class="action-arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="community-stats">
+            <div><b data-count="1208">1,208</b><span>条公众线索</span></div>
+            <div><b data-count="46">46</b><span>家合作机构</span></div>
+            <div><b data-count="3672">3,672</b><span>人次参与研学</span></div>
+          </div>
+
+          <figure class="community-quote">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <blockquote>非遗不是被封存的过去，<br>而是仍在发生的日常。</blockquote>
+            <figcaption>遗珍 · 共建手记 / 2026</figcaption>
+          </figure>
+        </div>
+
+        <div class="form-card" data-reveal style="--d:.1s">
+          <form id="clueForm" novalidate>
+            <div class="form-head">
+              <p class="kicker">OPEN CALL / 长期征集</p>
+              <h3>把你知道的，<br>留给后来的人。</h3>
+            </div>
+
+            <fieldset class="segmented">
+              <legend class="sr-only">线索类型</legend>
+              <label><input type="radio" name="type" value="线索" checked /><span>非遗线索</span></label>
+              <label><input type="radio" name="type" value="研学" /><span>研学预约</span></label>
+              <label><input type="radio" name="type" value="合作" /><span>合作共建</span></label>
+            </fieldset>
+
+            <div class="field-row">
+              <label class="field">
+                <span>称呼 <i>*</i></span>
+                <input type="text" name="name" id="clueName" placeholder="如何称呼您" required maxlength="30" aria-describedby="nameError" />
+                <small class="field-error" id="nameError" data-error-for="name" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>联系方式 <i>*</i></span>
+                <input type="text" name="contact" id="clueContact" placeholder="手机或邮箱" required maxlength="60" aria-describedby="contactError" />
+                <small class="field-error" id="contactError" data-error-for="contact" aria-live="polite"></small>
+              </label>
+            </div>
+
+            <label class="field field-message">
+              <span class="field-label-row">想告诉我们什么 <i>*</i><em class="char-count"><b id="messageCount">0</b>/600</em></span>
+              <textarea name="message" id="clueMessage" rows="4" placeholder="项目名称、所在地、您与它的故事…" required maxlength="600" aria-describedby="messageError"></textarea>
+              <small class="field-error" id="messageError" data-error-for="message" aria-live="polite"></small>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" name="consent" id="clueConsent" required aria-describedby="consentError" />
+              <span>我同意遗珍团队为档案整理目的联系我，并妥善保管以上信息。</span>
+            </label>
+            <small class="field-error checkbox-error" id="consentError" data-error-for="consent" aria-live="polite"></small>
+
+            <button class="btn btn-primary form-submit" type="submit">
+              提交给档案组
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="draft-status" id="draftStatus" hidden>草稿已自动保存到本机</p>
+            <p class="form-hint">概念演示：提交内容仅保存在本地浏览器，不会上传。</p>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <span class="success-seal">收</span>
+            <h3>已收入案头。</h3>
+            <p id="formSuccessText">感谢你的讲述。正式版本中，档案组会在 7 个工作日内完成初步核校并与你联系。</p>
+            <button class="text-btn" id="formAgain" type="button">再写一条 <span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="shell">
+    <div class="foot-top">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span>A LIVING ARCHIVE</p>
+        <h2>让每一次凝视，<br>都成为一次<em>续接</em>。</h2>
+      </div>
+      <div class="foot-note">
+        <p>遗珍计划持续向研究机构、传承人、学校与公众开放。我们相信，保存不是把文化放进玻璃柜，而是让它继续被使用、被讲述、被热爱。</p>
+        <a class="text-btn" href="#community">加入共建 <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#home">
+          <span class="brand-seal">遗</span>
+          <span class="brand-text"><strong>遗珍</strong><small>ICH DIGITAL ARCHIVE</small></span>
+        </a>
+        <p>见人 · 见物 · 见生活</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <a href="#archive">典藏档案</a>
+        <a href="#exhibition">数字展厅</a>
+        <a href="#map">时空地图</a>
+        <a href="#graph">知识图谱</a>
+      </div>
+      <div>
+        <h4>规范</h4>
+        <a href="#archive">Dublin Core 元数据</a>
+        <a href="#exhibition">数字资产标准</a>
+        <a href="credits.html">图像与资料说明</a>
+        <a href="#community">学术合作</a>
+        <a href="#community">版权与授权</a>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <a href="mailto:archive@example.org">archive@example.org</a>
+        <p>中国 · 北京</p>
+        <p>周一至周五 09:30—17:30</p>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <p>© 2026 遗珍 · 非物质文化遗产数字档案馆</p>
+      <p>本站为设计概念演示，非官方平台；档案与统计数据为示例。页面图像为博物馆与惠康收藏的开放影像（CC0 / CC BY 4.0 / 公有领域），出处与许可见「图像与资料说明」，部分为历史图像示意。</p>
+      <p class="mono">DESIGNED WITH RESPECT FOR THE MAKERS</p>
+    </div>
+  </div>
+  <span class="foot-watermark" aria-hidden="true">遗珍</span>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V6m-6 6 6-6 6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ================= SEARCH ================= -->
+<div class="overlay search-overlay" id="searchOverlay" hidden>
+  <div class="overlay-backdrop" data-close-search></div>
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="全站检索">
+    <div class="search-panel-head">
+      <span class="kicker">SEARCH / 全站检索</span>
+      <button class="icon-btn close-search" type="button" data-close-search aria-label="关闭检索">×</button>
+    </div>
+    <div class="search-big">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.4"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <input type="search" id="globalSearch" placeholder="输入项目、地区或门类…" aria-label="全站检索输入框" autocomplete="off" />
+      <kbd>ESC</kbd>
+    </div>
+    <p class="search-tip" id="searchTip">试试「昆曲」「苏州」「传统技艺」</p>
+    <div class="search-results" id="searchResults"></div>
+    <p class="search-help">↑ ↓ 选择 · Enter 打开 · Esc 关闭</p>
+  </div>
+</div>
+
+<!-- ================= ARTIFACT 360 ================= -->
+<div class="overlay module-overlay" id="artifactOverlay" hidden>
+  <div class="overlay-backdrop" data-close-module="artifactOverlay"></div>
+  <div class="artifact-stage" role="dialog" aria-modal="true" aria-label="青瓷玉壶春瓶 360 度环绕展厅">
+    <button class="module-close" type="button" data-close-module="artifactOverlay" aria-label="关闭环绕展厅">×</button>
+    <p class="module-kicker">3D COLLECTION / 360°</p>
+    <h3 class="module-title">龙泉青瓷 · 玉壶春瓶</h3>
+    <div class="artifact-canvas-wrap"><canvas id="overlayArtifactCanvas" aria-label="可环绕旋转的龙泉青瓷玉壶春瓶三维视图"></canvas></div>
+    <div class="module-controls" role="group" aria-label="环绕控制">
+      <button type="button" id="overlayAuto" aria-pressed="true" aria-label="暂停自动旋转" title="自动旋转">
+        <svg class="auto-on" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6v12M15 6v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <svg class="auto-off" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6.5 18 12l-9 5.5Z" fill="currentColor"/></svg>
+      </button>
+      <button type="button" id="overlayReset" aria-label="复位视角" title="复位视角">↺</button>
+      <button type="button" id="overlayZoomOut" aria-label="缩小器物" title="缩小">−</button>
+      <button type="button" id="overlayZoomIn" aria-label="放大器物" title="放大">+</button>
+    </div>
+    <p class="module-hint">拖拽任意方向 · 360° 环绕 / 滚轮缩放 / 双击复位 / Esc 退出</p>
+  </div>
+</div>
+
+<!-- ================= SPECTRAL ================= -->
+<div class="overlay module-overlay" id="spectralOverlay" hidden>
+  <div class="overlay-backdrop" data-close-module="spectralOverlay"></div>
+  <div class="spectral-stage" role="dialog" aria-modal="true" aria-label="多光谱还原展厅">
+    <button class="module-close" type="button" data-close-module="spectralOverlay" aria-label="关闭多光谱展厅">×</button>
+    <p class="module-kicker">SPECTRAL IMAGING / 多光谱还原</p>
+    <h3 class="module-title">看见褪色之前</h3>
+    <div class="spectral-compare" id="spectralCompare" style="--pct:50%">
+      <img class="spec-original" src="assets/images/celadon.jpg" alt="龙泉青瓷入库影像" />
+      <div class="spec-restored"><img src="assets/images/celadon.jpg" alt="龙泉青瓷多光谱复原影像" /></div>
+      <div class="spec-handle" aria-hidden="true"><i></i></div>
+    </div>
+    <input type="range" id="spectralRange" min="0" max="100" value="50" aria-label="还原强度" />
+    <div class="spec-labels" aria-hidden="true"><span>入库影像 · 1992</span><span>多光谱复原 · 2026</span></div>
+    <div class="spec-bands" role="group" aria-label="成像波段">
+      <button type="button" class="is-active" data-band="visible">可见光</button>
+      <button type="button" data-band="uv">紫外荧光</button>
+      <button type="button" data-band="ir">红外</button>
+    </div>
+    <p class="spec-note">拖动滑杆对比入库影像与多光谱复原结果；紫外荧光可显示釉面残损，红外可穿透积垢读出底款与纹饰。此处为交互演示，非真实扫描数据。</p>
+  </div>
+</div>
+
+<!-- ================= SOUND PANEL ================= -->
+<div class="overlay module-overlay" id="soundOverlay" hidden>
+  <div class="overlay-backdrop" data-close-module="soundOverlay"></div>
+  <div class="sound-stage" role="dialog" aria-modal="true" aria-label="声音博物馆入口">
+    <button class="module-close" type="button" data-close-module="soundOverlay" aria-label="关闭声音面板">×</button>
+    <p class="module-kicker">SOUND MUSEUM / 五段声音</p>
+    <h3 class="module-title">听见时间的纹理</h3>
+    <div class="track-list" id="soundMiniList"></div>
+    <p class="spec-note">点击曲目会关闭本面板、跳转声音博物馆并开始播放。演示音频由 Web Audio 实时合成，并非原始录音。</p>
+    <a class="text-btn" href="#sound">前往声音博物馆 <span>→</span></a>
+  </div>
+</div>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div class="overlay project-overlay" id="projectOverlay" hidden>
+  <div class="overlay-backdrop" data-close-project></div>
+  <div class="project-sheet" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="icon-btn project-close" type="button" data-close-project aria-label="关闭档案">×</button>
+    <div class="project-hero" id="projectHero"></div>
+    <div class="project-body">
+      <div class="project-heading">
+        <div class="project-heading-top">
+          <div class="project-tags" id="projectTags"></div>
+          <div class="project-tools">
+            <button type="button" class="project-tool" id="projectSave" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5h11v15l-5.5-3.6-5.5 3.6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              <span>收藏</span>
+            </button>
+            <button type="button" class="project-tool" id="projectShare">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 12h8M13 7l5 5-5 5M6 5h7v14H6Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>分享</span>
+            </button>
+          </div>
+        </div>
+        <h2 id="modalTitle">项目名称</h2>
+        <p class="project-en" id="projectEn"></p>
+        <p class="project-lede" id="projectLede"></p>
+      </div>
+
+      <div class="project-meta" id="projectMeta"></div>
+
+      <div class="project-signature" id="projectSignature"></div>
+
+      <div class="project-tabs" role="tablist" aria-label="档案内容">
+        <button type="button" role="tab" aria-selected="true" data-ptab="history">历史渊源</button>
+        <button type="button" role="tab" aria-selected="false" data-ptab="craft">工艺特征</button>
+        <button type="button" role="tab" aria-selected="false" data-ptab="lineage">传承谱系</button>
+        <button type="button" role="tab" aria-selected="false" data-ptab="assets">数字资产</button>
+      </div>
+
+      <div class="project-panels">
+        <div class="project-panel" data-panel="history"></div>
+        <div class="project-panel" data-panel="craft" hidden></div>
+        <div class="project-panel" data-panel="lineage" hidden></div>
+        <div class="project-panel" data-panel="assets" hidden></div>
+      </div>
+
+      <div class="project-pager">
+        <button type="button" id="projectPrev">← 上一份</button>
+        <span id="projectPagerCount">01 / 14</span>
+        <button type="button" id="projectNext">下一份 →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript">本站的档案筛选、三维器物与知识图谱需要启用 JavaScript。</div>
+</noscript>
+
+<script src="app.js"></script>
+</body>
+</html>

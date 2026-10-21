@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#07110e" />
+<meta name="description" content="遗珍 · 图像与资料说明。项目图像为原创数字插画，并列出声画参考与资料核校来源。" />
+<title>图像与资料说明 · 遗珍</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b64a35'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23f4ead6' font-family='serif'%3E%E9%81%97%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  body{background:radial-gradient(900px 600px at 85% -10%,rgba(143,201,179,.08),transparent 60%),#07110e}
+  .credits-wrap{width:min(1160px,calc(100% - 72px));margin:0 auto}
+  .credits-head{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px 0;border-bottom:1px solid var(--line)}
+  .credits-head .back{font-size:10px;letter-spacing:.1em;color:var(--muted);border-bottom:1px solid var(--line-strong);padding-bottom:4px;transition:color .25s,border-color .25s}
+  .credits-head .back:hover{color:var(--jade);border-color:rgba(var(--jade-rgb),.5)}
+  .credits-main{padding:70px 0 90px}
+  .credits-kicker{font-family:var(--mono);font-size:8.5px;letter-spacing:.24em;color:var(--jade)}
+  .credits-main h1{font-family:var(--serif);font-size:clamp(38px,5.2vw,66px);font-weight:400;line-height:1.25;margin:18px 0 22px}
+  .credits-main h1 em{font-style:normal;color:var(--jade)}
+  .credits-lede{max-width:720px;font-size:13px;line-height:2.05;color:var(--muted);font-weight:300}
+  .credits-note{
+    margin:38px 0 44px;padding:20px 22px;border-left:1px solid rgba(var(--cinnabar-rgb),.7);
+    background:rgba(var(--cinnabar-rgb),.035);max-width:820px;
+  }
+  .credits-note strong{display:block;font-family:var(--serif);font-size:18px;font-weight:400;color:var(--paper)}
+  .credits-note p{margin-top:7px;font-size:10.5px;line-height:1.9;color:var(--faint)}
+  .credits-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .credit-card{border:1px solid var(--line);background:rgba(255,255,255,.014)}
+  .credit-card img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-bottom:1px solid var(--line)}
+  .credit-body{padding:14px 16px 16px}
+  .credit-body h3{font-family:var(--serif);font-size:20px;font-weight:400;line-height:1.35}
+  .credit-body p{margin-top:5px;font-size:9px;line-height:1.75;color:var(--faint)}
+  .credit-body span{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:7px;letter-spacing:.1em;color:var(--jade)}
+  .refs{margin-top:64px;border-top:1px solid var(--line);padding-top:28px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:38px}
+  .refs h2{font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.4}
+  .refs h2 em{font-style:normal;color:var(--jade)}
+  .refs p{font-size:10.5px;line-height:1.9;color:var(--faint);margin-top:8px}
+  .ref-list{display:grid;gap:0}
+  .ref-list a{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line-soft);font-size:10.5px;color:var(--paper-dim);transition:color .25s}
+  .ref-list a:hover{color:var(--jade)}
+  .ref-list span{font-family:var(--mono);font-size:8px;color:var(--cinnabar)}
+  .ref-list em{font-family:var(--mono);font-style:normal;font-size:8px;color:var(--faint)}
+  .credits-foot{border-top:1px solid var(--line);padding:22px 0 30px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .credits-foot p{font-size:8.5px;color:var(--faint);line-height:1.7}
+  @media (max-width:900px){
+    .credits-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .refs{grid-template-columns:1fr;gap:14px}
+  }
+  @media (max-width:620px){
+    .credits-wrap{width:calc(100% - 36px)}
+    .credits-main{padding:46px 0 64px}
+    .credits-grid{grid-template-columns:1fr}
+    .credits-head{padding:20px 0}
+    .credits-head .brand-text small{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="credits-wrap">
+  <header class="credits-head">
+    <a class="brand" href="index.html" aria-label="遗珍 · 返回首页">
+      <span class="brand-seal">遗</span>
+      <span class="brand-text"><strong>遗珍</strong><small>ICH DIGITAL ARCHIVE</small></span>
+    </a>
+    <a class="back" href="index.html">← 返回数字档案馆</a>
+  </header>
+
+  <main class="credits-main">
+    <p class="credits-kicker">IMAGE & SOURCES / 图像与资料说明</p>
+    <h1>图像，是另一种<br><em>档案</em>。</h1>
+    <p class="credits-lede">
+      遗珍概念站中的 20 张项目图，均为可溯源的真实图像：克利夫兰艺术博物馆开放获取影像（CC0）、惠康收藏
+      （Wellcome Collection，CC BY 4.0 / 公有领域）。少数为与项目相关的历史图像或邻近文化示例，已逐张标注「示意」，
+      不是对应非遗项目的现代实拍记录。
+    </p>
+
+    <div class="credits-note">
+      <strong>关于图像的边界</strong>
+      <p>本页所有图像都附有馆藏编号、出处与许可，可直接核验。皮影戏展厅播放纪录片《四川非遗100 · 皮影人生》片段：本地演示随附视频文件；托管线上版不随附视频，改为从中国非物质文化遗产网源地址（ihchina.cn）流式引用，仅供展示演示；正式建馆时应替换为与项目一一对应的授权实拍，并为每份资产建立权利人、拍摄地、时间与使用范围的完整元数据。</p>
+    </div>
+
+    <div class="credits-grid">
+      <article class="credit-card"><img src="assets/images/kunqu.jpg" alt="清代《武香球》戏画：舞台演武场景" loading="lazy"><div class="credit-body"><h3>昆曲</h3><p>《武香球》戏画·舞台演武（清），示意昆曲舞台场面。</p><span>CLEVELAND 2025.101 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/kesi.jpg" alt="清代缂丝《石与水仙》" loading="lazy"><div class="credit-body"><h3>苏州缂丝织造技艺</h3><p>缂丝《石与水仙》（清），通经断纬的织造成品。</p><span>CLEVELAND 1915.654 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/celadon.jpg" alt="明代龙泉窑印花大碗" loading="lazy"><div class="credit-body"><h3>龙泉青瓷烧制技艺</h3><p>龙泉窑印花大碗（明），青釉与刻印的实物。</p><span>CLEVELAND 2020.188 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/piying.jpg" alt="19世纪版画：临清木偶戏演出" loading="lazy"><div class="credit-body"><h3>中国皮影戏</h3><p>《临清：围观木偶戏演出》（19世纪版画），皮影观演场景示意。</p><span>WELLCOME V0040140 · CC BY 4.0</span></div></article>
+      <article class="credit-card"><img src="assets/images/guqin.jpg" alt="南宋《听琴图》" loading="lazy"><div class="credit-body"><h3>古琴艺术</h3><p>《听琴图》（南宋），文人听琴的历史图像。</p><span>CLEVELAND 1983.85 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/yunjin.jpg" alt="清代吉服袍" loading="lazy"><div class="credit-body"><h3>南京云锦织造技艺</h3><p>清代吉服袍，云锦妆花织造的服饰实例。</p><span>CLEVELAND 1983.32 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/dong.jpg" alt="历史图绘：黑苗男子吹奏口簧" loading="lazy"><div class="credit-body"><h3>侗族大歌</h3><p>《黑苗男子吹奏口簧》（历史图绘），西南多声部歌唱文化示意，非侗族实拍。</p><span>WELLCOME L0031301 · CC BY 4.0</span></div></article>
+      <article class="credit-card"><img src="assets/images/solar.jpg" alt="清代《四季山水册》" loading="lazy"><div class="credit-body"><h3>二十四节气</h3><p>《四季山水册》（清），节令流转的山水图像。</p><span>CLEVELAND 1955.302.4 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/taiji.jpg" alt="中国武术拳法图" loading="lazy"><div class="credit-body"><h3>太极拳</h3><p>《中国武术拳法》图版，太极拳的拳谱图像。</p><span>WELLCOME L0039803 · CC BY 4.0</span></div></article>
+      <article class="credit-card"><img src="assets/images/papercut.jpg" alt="清代新刻《水浒》版画" loading="lazy"><div class="credit-body"><h3>中国剪纸</h3><p>新刻《水浒》版画（清），与刻纸同源的纸面镂刻传统示意。</p><span>CLEVELAND 2025.73 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/gesar.jpg" alt="西藏唐卡《绿度母》" loading="lazy"><div class="credit-body"><h3>格萨尔史诗</h3><p>西藏唐卡《绿度母》，格萨尔史诗的图像传统示意。</p><span>CLEVELAND 1970.156 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/acupuncture.jpg" alt="中国针灸穴位图" loading="lazy"><div class="credit-body"><h3>中医针灸</h3><p>《针灸穴位图》，经络腧穴的历史图像。</p><span>WELLCOME L0005253 · CC BY 4.0</span></div></article>
+      <article class="credit-card"><img src="assets/images/nongak.jpg" alt="朝鲜时代老人面具" loading="lazy"><div class="credit-body"><h3>朝鲜族农乐舞</h3><p>朝鲜时代《老人面具》，农乐祭礼的相关物证。</p><span>CLEVELAND 1989.103 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/pingtan.jpg" alt="John Thomson 1869年摄：广州两位坐姿乐人" loading="lazy"><div class="credit-body"><h3>苏州评弹</h3><p>《广州两位坐姿乐人》（John Thomson 摄，1869），说噱弹唱的早期纪实影像。</p><span>WELLCOME L0056474 · 公有领域</span></div></article>
+      <article class="credit-card"><img src="assets/images/jingju.jpg" alt="1912年油画：中国演员" loading="lazy"><div class="credit-body"><h3>京剧</h3><p>《中国演员》油画（德国，1912），西方视点下的京剧艺人，示意。</p><span>CLEVELAND 1924.550 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/duanwu.jpg" alt="19世纪中国土地神节庆图" loading="lazy"><div class="credit-body"><h3>端午节</h3><p>《土地神节庆图》（19世纪中国画），民间节庆祭祀场景，示意端午民俗。</p><span>WELLCOME V0046734 · CC BY 4.0</span></div></article>
+      <article class="credit-card"><img src="assets/images/shufa.jpg" alt="明代草书手卷" loading="lazy"><div class="credit-body"><h3>中国书法</h3><p>《秋日归隐》草书手卷（明），行笔与章法的实物。</p><span>CLEVELAND 2025.192 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/diaoban.jpg" alt="清代《山海经》刻本插图" loading="lazy"><div class="credit-body"><h3>雕版印刷技艺</h3><p>《山海经》新刻本插图（清），雕版印刷的成品质感。</p><span>CLEVELAND 2025.72 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/changdiao.jpg" alt="明代《马上行猎图》" loading="lazy"><div class="credit-body"><h3>蒙古族长调民歌</h3><p>《马上行猎图》（明），马背与草原的游牧意象，示意长调。</p><span>CLEVELAND 1915.680 · CC0</span></div></article>
+      <article class="credit-card"><img src="assets/images/mazu.jpg" alt="John Thomson 1870年摄：宁波天后宫" loading="lazy"><div class="credit-body"><h3>妈祖信俗</h3><p>宁波天后宫（John Thomson 摄，1870/71），妈祖庙宇的早期纪实影像。</p><span>WELLCOME L0055719 · 公有领域</span></div></article>
+    </div>
+
+    <section class="refs">
+      <div>
+        <h2>资料与视觉<br><em>参考路径</em></h2>
+        <p>项目事实、工艺描述与视觉意象的公开参考入口；图像本身来源于上述馆藏与惠康收藏，可在其开放页面直接核验。</p>
+      </div>
+      <div class="ref-list">
+        <a href="https://www.clevelandart.org/open-access" target="_blank" rel="noopener noreferrer"><span>01</span>Cleveland Museum of Art · Open Access (CC0)<em>CLEVELAND ↗</em></a>
+        <a href="https://wellcomecollection.org/works" target="_blank" rel="noopener noreferrer"><span>02</span>Wellcome Collection · Images (CC BY 4.0 / PD)<em>WELLCOME ↗</em></a>
+        <a href="https://www.ihchina.cn/video_detail/25449.html" target="_blank" rel="noopener noreferrer"><span>03</span>皮影戏纪录片《四川非遗100 · 皮影人生》<em>IHCHINA ↗</em></a>
+        <a href="https://ich.unesco.org/en/RL/kunqu-opera-00004" target="_blank" rel="noopener noreferrer"><span>04</span>UNESCO · Kunqu Opera<em>UNESCO ↗</em></a>
+        <a href="https://ich.unesco.org/" target="_blank" rel="noopener noreferrer"><span>05</span>UNESCO Intangible Cultural Heritage<em>UNESCO ↗</em></a>
+        <a href="https://www.ihchina.cn/project.html" target="_blank" rel="noopener noreferrer"><span>06</span>中国非物质文化遗产网 · 国家级项目名录<em>IHCHINA ↗</em></a>
+        <a href="https://www.ihchina.cn/solar_terms.html" target="_blank" rel="noopener noreferrer"><span>07</span>中国非物质文化遗产网 · 二十四节气专题<em>IHCHINA ↗</em></a>
+        <a href="https://www.ihchina.cn/tjq_home.html" target="_blank" rel="noopener noreferrer"><span>08</span>中国非物质文化遗产网 · 太极拳专题<em>IHCHINA ↗</em></a>
+        <a href="https://commons.wikimedia.org/wiki/Category:Kunqu_Opera" target="_blank" rel="noopener noreferrer"><span>09</span>Wikimedia Commons · Category: Kunqu Opera<em>WIKIMEDIA ↗</em></a>
+        <a href="https://commons.wikimedia.org/wiki/Category:Longquan_celadon_in_the_Cleveland_Museum_of_Art" target="_blank" rel="noopener noreferrer"><span>10</span>Wikimedia Commons · Longquan celadon in the Cleveland Museum of Art<em>WIKIMEDIA ↗</em></a>
+        <a href="https://commons.wikimedia.org/wiki/File:%27Grinding_Hell%27,_shadow_puppet_from_Shaanxi_Province,_19th_century,_Lin_Liu-Hsin_Museum.JPG" target="_blank" rel="noopener noreferrer"><span>11</span>Wikimedia Commons · Shaanxi shadow puppet, Lin Liu-Hsin Museum<em>WIKIMEDIA ↗</em></a>
+        <a href="https://commons.wikimedia.org/wiki/Category:Musical_instruments_of_China" target="_blank" rel="noopener noreferrer"><span>12</span>Wikimedia Commons · Musical instruments of China<em>WIKIMEDIA ↗</em></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="credits-foot">
+    <p>© 2026 遗珍 · 非物质文化遗产数字档案馆（概念站）</p>
+    <p>图像出处：克利夫兰艺术博物馆开放获取（CC0）与惠康收藏（CC BY 4.0 / 公有领域）；项目事实与传承人信息以官方名录及保护单位核校为准。</p>
+  </footer>
+</div>
+</body>
+</html>
